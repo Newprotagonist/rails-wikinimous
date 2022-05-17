@@ -1,0 +1,21 @@
+<div class="container">
+  <% @articles.each do |article| %>
+    <div class="card">
+      <h2 class="title"><%= link_to article.title.capitalize, article_path(article.id) %></h2>
+      <div class="content">
+        <p><%= article.content %></p>
+        <div class="btn">
+          <div class="btn-blue">
+            <%= link_to "Edit", edit_article_path(article.id) %>
+          </div>
+          <div class="btn-red">
+            <%= link_to "Delete", article_path(article.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <div class="btn-green">
+    <%= link_to "Create", new_article_path, class:"btn-green" %>
+  </div>
+</div>

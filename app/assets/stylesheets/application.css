@@ -1,15 +1,81 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 0;
+  width: 80em;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content:center;
+}
+
+.btn-blue {
+  background-color: #FFD447;
+  margin-right: 5px;
+  border: solid #2C5784;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-blue a {
+  color:#6A2E35;
+  text-decoration: none;
+}
+
+.btn-red {
+  background-color: #6A2E35;
+  margin-right: 5px;
+  border: solid #2C5784;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-red a {
+  color: #FFD447;
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #D8DDEF;
+  color: #2C5784;
+  margin: 10px;
+}
+
+a{
+  color: #2C5784;
+}
+
+.btn-green {
+  background-color: #85FF9E;
+  color: #2C5784;
+  border-radius: 5px;
+  margin: 10px;
+  width: 990px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-green a {
+  background-color: #85FF9E;
+  color: #2C5784;
+  border-radius: 5px;
+  margin: 10px;
+  width: cover;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.btn-green:hover {
+  color: #85FF9E;
+  background-color:#2C5784 ;
+}
